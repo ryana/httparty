@@ -7,9 +7,9 @@ require 'crack'
 
 dir = Pathname(__FILE__).dirname.expand_path
 
-require dir + 'httparty/module_inheritable_attributes'
-require dir + 'httparty/cookie_hash'
-require dir + 'httparty/net_digest_auth'
+require((dir + 'httparty/module_inheritable_attributes').to_s)
+require((dir + 'httparty/cookie_hash').to_s)
+require((dir + 'httparty/net_digest_auth').to_s)
 
 # @see HTTParty::ClassMethods
 module HTTParty
